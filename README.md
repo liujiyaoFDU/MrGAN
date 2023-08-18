@@ -1,12 +1,11 @@
 # Multi-Phase Liver-Specific DCE-MRI Translation via a Registration-Guided GAN
 
-::large_orange_diamond:This repository is developing.
+This paper has been accepted by: [The 8th Simulation and Synthesis in Medical Imaging (SASHIMI) workshop, MICCAI 2023.](https://2023.sashimi-workshop.org/call_for_papers/)
 
 ![intro](https://ossjiyaoliu.oss-cn-beijing.aliyuncs.com/uPic/5PNkpg.png)
 
 ![arch](https://ossjiyaoliu.oss-cn-beijing.aliyuncs.com/uPic/R0Vd3i.png)
 
-This paper has been accepted by: [The 8th Simulation and Synthesis in Medical Imaging (SASHIMI) workshop, MICCAI 2023.](https://2023.sashimi-workshop.org/call_for_papers/)
 
 ## Prepare dataset and meta information
 
