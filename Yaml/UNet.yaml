@@ -1,0 +1,36 @@
+
+
+# 可修改参数
+## 必须修改内容
+name: UNet # 保存visdom环境名
+root: ./
+save_root: './output/Unet/'
+image_save: './output/Unet/img/'
+
+# 超参设置
+batchSize : 4
+n_epochs : 100
+resize : 256
+cuda: True  
+size: 256                # size of the data crop
+input_nc: 1                   
+lr_scheduler_eps : 0.001
+lr_scheduler_patience : 10
+early_stop_patience : 12
+initial_lr : 0.0001
+threshold_lr : 0.000001
+weight_decay : 0.00001
+optimizer_type : 'adam'  # adam, sgd
+scheduler_type : 'no'  # ReduceLR, StepLR, poly
+label_smoothing : 0.01
+aux_loss : False
+gamma : 0.5
+alpha : 0.85
+epoch: 0        # starting epoch
+model_number : random.randint(1, 1e6)
+num_classes : 2  # 分割的类别(前景+背景) 同output_nc
+n_cpu : 8
+images_dir: './../../../Data/liver_PMX/Liver_Fibrosis_PMX_REG_transformed5'
+train_txt_path: './data/train.txt'     # root directory of the dataset
+val_txt_path: './data/val.txt'
+palette : [[0], [1]]  # mask颜色表

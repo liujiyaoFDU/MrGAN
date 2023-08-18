@@ -27,10 +27,10 @@ regist : True
 epoch: 0        # starting epoch
 n_epochs: 80       # How often do you want to display output images during training
 batchSize: 1               # size of the batches
-images_dir: '/home/zhouyc/jiyaoliu/Data/liver_PMX/Liver_Fibrosis_PMX_REG_transformed5'
-train_txt_path: '/home/zhouyc/jiyaoliu/Projects/Liver_PMX/Reg-GAN-PMX/data/train.txt'     # root directory of the dataset
-val_txt_path: '/home/zhouyc/jiyaoliu/Projects/Liver_PMX/Reg-GAN-PMX/data/val.txt'
-test_txt_path: '/home/zhouyc/jiyaoliu/Projects/Liver_PMX/Reg-GAN-PMX/data/test.txt'
+images_dir: './../../../Data/liver_PMX/Liver_Fibrosis_PMX_REG_transformed5'
+train_txt_path: './data/train.txt'     # root directory of the dataset
+val_txt_path: './data/val.txt'
+test_txt_path: './data/test.txt'
 lr: 0.0001                   # initial learning rate
 decay_epoch: 20            # epoch to start linearly decaying the learning rate to 0
 size: 256                # size of the data crop
