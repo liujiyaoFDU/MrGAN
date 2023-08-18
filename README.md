@@ -36,11 +36,18 @@ data
 
 ## Train and test
 
+Pretrain Unet:
+
+```python
+python train_UNet.py --config './Yaml/UNet.yaml'
+```
+
 Start visdom：
 
 ```python
 python -m visdom.server -p 6019
 ```
+
 Train:
 ```python
 python train.py --config './Yaml/mrgan.yaml'
