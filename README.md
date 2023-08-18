@@ -2,11 +2,14 @@
 
 ::large_orange_diamond:This repository is developing.
 
-![arch](https://ossjiyaoliu.oss-cn-beijing.aliyuncs.com/uPic/arch.png)
+![intro](https://ossjiyaoliu.oss-cn-beijing.aliyuncs.com/uPic/5PNkpg.png)
+
+![arch](https://ossjiyaoliu.oss-cn-beijing.aliyuncs.com/uPic/R0Vd3i.png)
 
 This paper has been accepted by: [The 8th Simulation and Synthesis in Medical Imaging (SASHIMI) workshop, MICCAI 2023.](https://2023.sashimi-workshop.org/call_for_papers/)
 
 ## Prepare dataset and meta information
+
 ```
 -dataset
     - training_path
@@ -18,7 +21,9 @@ This paper has been accepted by: [The 8th Simulation and Synthesis in Medical Im
         - id_2.npy
         ...
 ```
+
 You can use `./data/split.py` to get meta imformation of your dataset.
+
 ```
 data
     - train.txt
