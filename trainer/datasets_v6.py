@@ -1,15 +1,7 @@
 #!/usr/bin/python3
 """
-author:jiyao liu 20220223
-DONE:1.输入增加 ROI mask:
-        return {'A': stack_input.float(), 
-        'B': transformed_images[4].float(), 
-        'C': masked_stack_input.float(),
-        'D': masked_transformed_images[4].float()}
+author:jiyao liu 20230223
 
-DONE:2. 数据增广: source和target随机相同仿射变换
-
-DONE:
 
 """
 

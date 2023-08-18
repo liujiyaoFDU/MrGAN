@@ -1,7 +1,6 @@
 """
-author:jiyao liu 20220223
+author:jiyao liu 20230223
 
-Down: 1. 增加mask分支;
 """
 
 import torch.nn.functional as F

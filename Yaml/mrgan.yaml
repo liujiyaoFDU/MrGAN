@@ -1,38 +1,24 @@
-#       --p2pv2--
-#   data: Liver_Fibrosis_PMX_REG_transformed5
-#         loaded by datasets_with_masked_image.py
-#   input:  {'A': stack_input.float(), 
-#         'B': transformed_images[4].float(), 
-#         'C': masked_stack_input.float(),
-#         'D': masked_transformed_images[4].float()}
-#   aug: source and target same randomaffine
-#   txt: jiyaoliu/Projects/Liver_PMX/Reg-GAN-PMX/data
-#   model: Pix2Pix_v2.py (add share bottleneck model )
-#   Trainer: p2pTrainer_v2.py 
-
-
-## 必须修改内容
-name: mrgan1 # 保存visdom环境名
+name: mrgan # visdom env name
 root: ./
-save_root: './output/v1.0/'  # save path of training
-image_save: './output/v1.0/img_val/'  # save path of test result
+save_root: './output/v1.1/'  # save path of training
+image_save: './output/v1.1/img_val/'  # save path of test result
 # lamda weight
 Adv_lamda: 1
 P2P_lamda: 5
 blur_lamda: 5
-perceptual: 0.5 # 感知损失权重
+perceptual: 0.5 
 Corr_lamda: 1
 Smooth_lamda: 1
 shape : 1
 
 
-## 可以修改的内容
-port: 6019   #  port parameters
-num_classes : 2  # 分割的类别(前景+背景)
-palette : [[0], [1]]  # mask颜色表
+## 
+port: 6019   # visdom port parameters
+num_classes : 2  # class num of seg (foreground and background)
+palette : [[0], [1]]  # mask color table
 unet_chk : './chk/UNet.pth'
 
-## 不变内容
+## 
 cuda: True
 resize: 256
 regist : True

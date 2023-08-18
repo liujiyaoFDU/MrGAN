@@ -1,4 +1,4 @@
-"""CBAM:通道+空间注意力机制
+"""CBAM
 
 author:jiyao liu
 """
